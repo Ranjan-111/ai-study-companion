@@ -1,0 +1,90 @@
+.revision-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.revision-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: 14px 16px;
+  transition: all var(--transition-fast);
+}
+
+.revision-item:hover {
+  border-color: var(--border-color-hover);
+}
+
+.revision-item.done {
+  opacity: 0.6;
+}
+
+.revision-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.revision-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 2px solid var(--border-color-hover);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.revision-checkbox:hover {
+  border-color: var(--accent-primary);
+}
+
+.revision-checkbox.checked {
+  background: var(--success);
+  border-color: var(--success);
+}
+
+.revision-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.revision-topic {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.revision-topic.completed-text {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.revision-subject {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.revision-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.revision-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}

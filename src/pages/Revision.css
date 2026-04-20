@@ -1,0 +1,71 @@
+.revision-page {
+  max-width: 1200px;
+}
+
+.revision-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.revision-calendar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.revision-list-section {
+  min-height: 400px;
+}
+
+.revision-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.revision-list-header h3 {
+  margin-bottom: 0;
+}
+
+.revision-filter-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.tab-mini {
+  padding: 5px 12px;
+  border: none;
+  background: var(--surface-1);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all var(--transition-fast);
+}
+
+.tab-mini:hover {
+  background: var(--surface-2);
+  color: var(--text-primary);
+}
+
+.tab-mini.active {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.selected-date-revisions h3 {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .revision-layout {
+    grid-template-columns: 1fr;
+  }
+}

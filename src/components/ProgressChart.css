@@ -1,0 +1,19 @@
+.chart-tooltip {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: 10px 14px;
+  box-shadow: var(--shadow-md);
+}
+
+.chart-tooltip-label {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.chart-tooltip-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}

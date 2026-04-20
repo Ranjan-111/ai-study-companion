@@ -1,0 +1,20 @@
+.tasks-page {
+  max-width: 1000px;
+}
+
+.tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.72rem;
+  margin-left: 6px;
+  padding: 0 6px;
+}
+
+.tab.active .tab-count {
+  background: rgba(255, 255, 255, 0.25);
+}
